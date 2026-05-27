@@ -1,0 +1,74 @@
+/* =========================
+   FULL WIDTH FOOTER
+========================= */
+
+.footer{
+    width:100%;
+    margin-top:50px;
+    padding:60px 20px;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(10px);
+}
+
+/* INNER CONTENT CENTERED */
+
+.footer-inner{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+}
+
+.footer-inner h2{
+    color:#ff9db1;
+    margin-bottom:10px;
+}
+
+.footer-sub{
+    opacity:0.8;
+    margin-bottom:30px;
+}
+
+/* LINKS */
+
+.footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.footer-btn{
+    padding:12px 18px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+/* COLORS */
+
+.whatsapp{ background:#25D366; }
+.linkedin{ background:#0077B5; }
+.email{ background:#EA4335; }
+.call{ background:#34A853; }
+.insta{
+    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+}
+
+/* HOVER */
+
+.footer-btn:hover{
+    transform:translateY(-3px);
+    opacity:0.9;
+}
+
+/* COPYRIGHT */
+
+.copyright{
+    font-size:14px;
+    opacity:0.6;
+}

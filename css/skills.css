@@ -1,0 +1,109 @@
+/* =========================
+   TOGGLE CONTENT
+========================= */
+/* hidden state */
+.component-body.hide{
+    display:none !important;
+}
+.component-body{
+    transition:all 0.4s ease;
+}
+
+
+/* =========================
+   CAROUSEL CONTAINER
+========================= */
+
+.skills-carousel{
+    overflow-x:auto;
+    padding:10px 0;
+    scroll-behavior:smooth;
+}
+
+/* hide scrollbar */
+
+.skills-carousel::-webkit-scrollbar{
+    display:none;
+}
+
+/* =========================
+   SCROLL TRACK
+========================= */
+
+.skill-track{
+    display:flex;
+    gap:12px;
+    width:max-content;
+}
+
+/* =========================
+   MINI SKILL CARDS
+========================= */
+
+.mini-card{
+    min-width:140px;
+    padding:14px;
+    border-radius:14px;
+
+    text-align:center;
+    font-size:14px;
+    font-weight:500;
+
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:0.3s;
+    cursor:pointer;
+
+    user-select:none;
+}
+
+/* hover effect */
+
+.mini-card:hover{
+    transform:translateY(-5px) scale(1.05);
+    background:rgba(255,255,255,0.15);
+}
+
+
+.gallery-header1{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    gap:15px;
+}
+
+.toggle-btn1{
+    padding:10px 18px;
+    border:none;
+    border-radius:12px;
+    background:#ff4d6d;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.toggle-btn1:hover{
+    background:#ff3355;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   SHOW / HIDE ANIMATION
+========================= */
+
+.gallery-wrapper1{
+    overflow:hidden;
+    max-height:1000px;
+    opacity:1;
+    transition:
+        max-height 0.6s ease,
+        opacity 0.4s ease;
+}
+
+.gallery-wrapper1.hide{
+    max-height:0;
+    opacity:0;
+}

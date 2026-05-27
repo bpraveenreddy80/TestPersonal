@@ -1,0 +1,54 @@
+/* =========================
+   FLIP CARD
+========================= */
+
+.flip-card{
+    perspective:1000px;
+    cursor:pointer;
+}
+
+/* inner container */
+
+.flip-inner{
+    position:relative;
+    width:100%;
+    transform-style:preserve-3d;
+    transition:transform 0.8s ease;
+}
+
+/* flipped state */
+
+.flip-card.flipped .flip-inner{
+    transform:rotateY(180deg);
+}
+
+/* front & back */
+
+.flip-front,
+.flip-back{
+    position:absolute;
+    width:100%;
+    backface-visibility:hidden;
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+}
+
+/* back side */
+
+.flip-back{
+    transform:rotateY(180deg);
+}
+
+/* FRONT (glass dark) */
+.flip-front{
+    background:#111827;
+    color:#f9fafb;
+}
+
+/* BACK (gradient style) */
+.flip-back{
+    background:linear-gradient(135deg,#7c3aed,#ec4899);
+    color:#ffffff;
+}
+

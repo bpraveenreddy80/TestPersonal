@@ -1,0 +1,54 @@
+/* LOGIN */
+
+#loginPage{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.login-box{
+    width:100%;
+    max-width:400px;
+    background:rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    text-align:center;
+}
+
+.login-box h1{
+    margin-bottom:10px;
+}
+
+.login-box p{
+    margin-bottom:25px;
+    opacity:0.7;
+}
+
+.login-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.login-box button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#ff4d6d;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#error{
+    margin-top:15px;
+    color:#ffb3b3;
+    display:none;
+}
